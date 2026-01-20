@@ -1,0 +1,44 @@
+use_default_settings: true
+
+general:
+  instance_name: "SearXNG"
+  debug: false
+
+search:
+  safe_search: 0
+  autocomplete: "google"
+  formats:
+    - html
+    - json
+
+server:
+  secret_key: "ultrasecretkey123456789012345678"
+  limiter: false
+  image_proxy: true
+  bind_address: "0.0.0.0:8080"
+
+ui:
+  default_theme: simple
+  theme_args:
+    simple_style: dark
+
+engines:
+  - name: google
+    engine: google
+    shortcut: g
+    disabled: false
+
+  - name: duckduckgo
+    engine: duckduckgo
+    shortcut: ddg
+    disabled: false
+
+  - name: bing
+    engine: bing
+    shortcut: bi
+    disabled: false
+
+  - name: wikipedia
+    engine: wikipedia
+    shortcut: wp
+    disabled: false
